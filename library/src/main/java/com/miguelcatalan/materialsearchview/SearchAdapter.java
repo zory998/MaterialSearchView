@@ -108,6 +108,7 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         String currentListData = (String) getItem(position);
 
         viewHolder.textView.setText(currentListData);
+        viewHolder.textView.setTextColor(getResources().getColor(android.R.color.white));
         if (ellipsize) {
             viewHolder.textView.setSingleLine();
             viewHolder.textView.setEllipsize(TextUtils.TruncateAt.END);
